@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  .logo img {
+    max-width: 100px; /* Adjust the max-width of your logo */
+    margin-left: 20px;
+  }
+
+  .search-container {
+    width: 45%;
+    max-width: 600px; /* Set a max-width to prevent it from growing too wide */
+    display: flex;
+    
+  }
+
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    outline: none;
+    border: none;
+  }
+ 
+
+  .search-container button {
+    background-color: rgb(254, 189, 105);
+    color: white;
+    padding: 5px 18px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border: none;
+  }
+
+  .orders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .orders i{
+    margin-left: 40px;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  #body{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid rgb(230, 227, 227);
+    border-top: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding: 10px;
+  }
+
+  
+ 
+  .info-img img{
+    max-width: 250px;
+    height: 120px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 20px;
+  }
+
+  
+  .btn{
+    background-color: rgb(255, 216, 20);
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .btn:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.8s;
+  }
+  #num{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(230, 230, 225);
+    padding: 5px;
+  }
+  .star{
+    color: rgb(250, 188, 17);
+  }
+  @media screen and (max-width: 500px) {
+    .search-container {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .product {
+      width: 100%;
+    }
+  }
